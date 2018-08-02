@@ -1,0 +1,38 @@
+{
+    "defaultSeverity": "error",
+    "jsRules": {},
+    "rules": {
+        "member-access": true,
+        "no-any": {
+            "severity": "warning"
+        },
+        "no-magic-numbers": {
+            "severity": "warning"
+        },
+        "no-non-null-assertion": true,
+        "no-parameter-reassignment": true,
+        "typedef": [true, "call-signature", "arrow-call-signature", "parameter", "arrow-parameter", "property-declaration", "member-variable-declaration"],
+        "curly": true,
+        "no-conditional-assignment": true,
+        "no-for-in-array": true,
+        "indent": [true, "spaces", 4],
+        "max-classes-per-file": [true, 1],
+        "prefer-const": {
+            "severity": "warning"
+        },
+        "arrow-parens": true,
+        "class-name": true,
+        "encoding": true,
+        "interface-name": [true, "never-prefix"],
+        "quotemark": [true, "single"],
+        "whitespace": [true, "check-branch", "check-decl", "check-module", "check-preblock"],
+        "space-before-function-paren": [ true, { "anonymous": "always", "named": "always", "asyncArrow": "always", "method": "always", "constructor": "always" }],
+        "no-var-keyword": {
+            "severity": "warning"
+        },
+        "triple-equals": {
+            "severity": "warning",
+            "options": ["allow-null-check", "allow-undefined-check"]
+        }
+    }
+}
