@@ -15,6 +15,7 @@ class ImageUploadServer {
     }
 
     public runServer (): void {
+        
         const serverPort = this.configurationManager.getServerPort();
         this.imageUploaderServer.listen(serverPort, () => {
             this.logger.log(`Listening at http://localhost:${serverPort}/`);
