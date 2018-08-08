@@ -8,7 +8,7 @@ class PostImageController implements RouteController {
 
     public executeController (request: Request, response: Response, next: NextFunction): void {
         this.logger.log('Received file named: ' + request.file.filename);
-        response.send(request.file.filename)
+        response.send(request.file.filename);
     }
 }
 
