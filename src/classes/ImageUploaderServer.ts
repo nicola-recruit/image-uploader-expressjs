@@ -14,6 +14,10 @@ class ImageUploadServer {
         this.imageUploaderServer.use(router);
     }
 
+    public addUploadsPathAsStaticResource (): void {
+        this.imageUploaderServer.use('/uploads', express.static(this.configurationManager.getUploadPath()));
+    }
+
     public runServer (): void {
         
         const serverPort = this.configurationManager.getServerPort();

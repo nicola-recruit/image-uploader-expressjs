@@ -9,5 +9,6 @@ const imageUploadServer = new ImageUploadServer(configurationManager, logger);
 const routerFactory = new RouterFactory(configurationManager, logger);
 
 imageUploadServer.addRouter(routerFactory.buildImageRouter());
+imageUploadServer.addUploadsPathAsStaticResource();
 
 imageUploadServer.runServer();
